@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
-import {map, Observable, Subject, switchMap} from 'rxjs';
+import {delay, map, Observable, Subject, switchMap} from 'rxjs';
 import { ProductService } from '../../services/product.service';
 import { ProductModel } from '../../model/product.model';
 
@@ -17,6 +17,7 @@ export class ProductListComponent {
   }
 
   readonly prodList$: Observable<ProductModel[]> = this._productService.getAll();
+
   readonly details$: Observable<ProductModel> = this.selectedProductId$.pipe(
     switchMap((data => this._productService.getOne(data)))
   );
