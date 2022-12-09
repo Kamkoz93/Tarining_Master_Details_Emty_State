@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from "@angular/common/http";
 import {EmployeesServiceModule} from "./services/employees.service-module";
 import {ProductServiceModule} from "./services/product.service-module";
+import {CryptoServiceModule} from "./services/crypto.service-module";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {ProductServiceModule} from "./services/product.service-module";
     BrowserAnimationsModule,
     HttpClientModule,
     EmployeesServiceModule,
-    ProductServiceModule
+    ProductServiceModule,
+    CryptoServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
