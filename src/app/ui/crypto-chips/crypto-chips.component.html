@@ -1,0 +1,46 @@
+<!--<mat-card>-->
+<!--  <mat-card-title>Crypto Chips</mat-card-title>-->
+<!--  <mat-card-content>-->
+<!--    <mat-chip-list *ngIf="chipsList$ | async as list else loading" aria-label="Fish selection">-->
+<!--      <ng-container *ngIf="list.length > 0; else emptyState">-->
+<!--        <mat-chip *ngFor="let item of chipsList$ | async">-->
+<!--          {{item.symbol}}-->
+<!--        </mat-chip>-->
+<!--      </ng-container>-->
+<!--        <ng-template #emptyState>-->
+<!--          Oopss! There is no data!-->
+<!--        </ng-template>-->
+<!--    </mat-chip-list>-->
+<!--    <ng-template #loading>-->
+<!--      <mat-progress-spinner-->
+<!--        [color]="'primary'"-->
+<!--        [mode]="'indeterminate'"-->
+<!--        [value]="50">-->
+<!--      </mat-progress-spinner>-->
+<!--    </ng-template>-->
+<!--  </mat-card-content>-->
+<!--</mat-card>-->
+
+
+
+
+
+<mat-card-content>
+  <mat-chip-list *ngIf="chipsList$ | async as list else loading" aria-label="Fish selection">
+    <ng-container *ngIf="list.length > 0; else emptyState">
+  <mat-chip *ngFor="let item of chipsList$ | async">
+    {{item.symbol}}
+  </mat-chip>
+</ng-container>
+  <ng-template #emptyState>
+    Oopss! There is no data!
+  </ng-template>
+  </mat-chip-list>
+  <ng-template #loading>
+  <mat-progress-spinner
+    [color]="'primary'"
+    [mode]="'indeterminate'"
+    [value]="50">
+  </mat-progress-spinner>
+</ng-template>
+</mat-card-content>

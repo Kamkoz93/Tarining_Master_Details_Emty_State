@@ -59,6 +59,10 @@
       "list": "<mat-selection-list role=\"list\" fxLayout=\"row\" [multiple]=\"false\">\n  $content$\n</mat-selection-list>",
       "item": "<mat-list-option role=\"listoption\" *ngFor=\"let $itemVariable$ of $listVariable$\" [value]=\"$itemVariable$\">\n  {{$itemVariable$}}\n</mat-list-option>"
     },
+    "smart-chip-list": {
+      "list": "<mat-card-content><mat-chip-list *ngIf=\"{{$itemVariable$}} | async as list else loading\" aria-label=\"Fish selection\"><ng-container *ngIf=\"list.length > 0; else emptyState\">\n  $content$\n      </ng-container>\n        <ng-template #emptyState>\n          Oopss! There is no data!\n        </ng-template></mat-chip-list>    <ng-template #loading>\n      <mat-progress-spinner\n        [color]=\"'primary'\"\n        [mode]=\"'indeterminate'\"\n        [value]=\"50\">\n      </mat-progress-spinner>\n    </ng-template>\n  </mat-card-content>",
+      "item": "<mat-chip *ngFor=\"let $itemVariable$ of $listVariable$\">\n {{$itemVariable$}}\n</mat-chip>"
+    },
     "chip-list": {
       "list": "<mat-chip-list aria-label=\"Fish selection\">\n  $content$\n</mat-chip-list>",
       "item": "<mat-chip *ngFor=\"let $itemVariable$ of $listVariable$\">\n {{$itemVariable$}}\n</mat-chip>"

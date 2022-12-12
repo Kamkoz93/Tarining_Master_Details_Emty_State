@@ -5,6 +5,7 @@ import { EmployeeListComponent } from './ui/employee-list/employee-list.componen
 import { CryptoListComponent } from './ui/crypto-list/crypto-list.component';
 import { ProductsComponent } from './ui/products/products.component';
 import { CategoriesComponent } from './ui/categories/categories.component';
+import { CryptoChipsComponent } from './ui/crypto-chips/crypto-chips.component';
 import { ProductListComponentModule } from './ui/product-list/product-list.component-module';
 import { ProductServiceModule } from './services/product.service-module';
 import { EmployeeListComponentModule } from './ui/employee-list/employee-list.component-module';
@@ -13,9 +14,11 @@ import { CryptoListComponentModule } from './ui/crypto-list/crypto-list.componen
 import { ProductsComponentModule } from './ui/products/products.component-module';
 import { CategoriesComponentModule } from './ui/categories/categories.component-module';
 import { ProductCategoriesServiceModule } from './services/product-categories.service-module';
+import { CryptoChipsComponentModule } from './ui/crypto-chips/crypto-chips.component-module';
+import { CryptoServiceModule } from './services/crypto.service-module';
 
 @NgModule({
-  imports: [RouterModule.forRoot([{ path: 'products-master-details', component: ProductListComponent }, { path: 'employees-master-details', component: EmployeeListComponent }, { path: 'crypto-master-details', component: CryptoListComponent }, { path: 'products', component: ProductsComponent }, { path: 'categories', component: CategoriesComponent }]), ProductListComponentModule, ProductServiceModule, EmployeeListComponentModule, EmployeesServiceModule, CryptoListComponentModule, ProductsComponentModule, CategoriesComponentModule, ProductCategoriesServiceModule],
+  imports: [RouterModule.forRoot([{ path: 'products-master-details', component: ProductListComponent }, { path: 'employees-master-details', component: EmployeeListComponent }, { path: 'crypto-master-details', component: CryptoListComponent }, { path: 'products', component: ProductsComponent }, { path: 'categories', component: CategoriesComponent }, { path: 'crypto', component: CryptoChipsComponent }]), ProductListComponentModule, ProductServiceModule, EmployeeListComponentModule, EmployeesServiceModule, CryptoListComponentModule, ProductsComponentModule, CategoriesComponentModule, ProductCategoriesServiceModule, CryptoChipsComponentModule, CryptoServiceModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
