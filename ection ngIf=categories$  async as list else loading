@@ -1,0 +1,174 @@
+[33mcommit 825d1a2a2733bf36410ed4343549f9552cc902ab[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Kamkoz <kamkoz93@gmail.com>
+Date:   Mon Dec 12 10:06:19 2022 +0100
+
+    feat: Added public holidays with created smart select
+
+[33mcommit 50c8a68ac3d921952804e746fae8928cffbcb80f[m
+Author: Kamkoz <kamkoz93@gmail.com>
+Date:   Mon Dec 12 09:34:55 2022 +0100
+
+    feat: Added crypto chips with creating smart chip list template
+
+[33mcommit dec5db49587b80dce0315d5169674c0eb22931f2[m
+Author: Kamkoz <kamkoz93@gmail.com>
+Date:   Mon Dec 12 09:02:54 2022 +0100
+
+    feat: added empty state and loading to categories list with created smart selection list template
+
+[33mcommit 317aa71af0bfef9e65fc83e29688f4d6b6744702[m
+Author: Kamkoz <kamkoz93@gmail.com>
+Date:   Fri Dec 9 14:25:39 2022 +0100
+
+    feat: Added empty state with loading to products list
+
+[33mcommit 1fef4327e8868c7d9e18e660add3c4e6536cb797[m
+Author: Kamkoz <kamkoz93@gmail.com>
+Date:   Fri Dec 9 13:23:31 2022 +0100
+
+    feat: Added crypto list with details displaing on the side
+
+[33mcommit 4edb4172f9e2bb828b9337e8f34b528aa5b661a4[m
+Author: Kamkoz <kamkoz93@gmail.com>
+Date:   Fri Dec 9 13:00:39 2022 +0100
+
+    feat: Added Employee List in two col grid with details showing on the side
+
+[33mcommit 54e12cccdd209c3bc23f58cdbaed30af2ce2ecdb[m
+Author: Kamkoz <kamkoz93@gmail.com>
+Date:   Fri Dec 9 11:58:47 2022 +0100
+
+    Added two columns grid list with product details
+
+[33mcommit db30a17b7ecf1a7317207bac8563ab5061a68f9f[m
+Merge: b3bf11f 1ee9685
+Author: gradzio <gregradzio@gmail.com>
+Date:   Fri Nov 18 10:49:00 2022 -0300
+
+    Merge branch 'main' of github.com:Lowgular/ng-material-starter-kit
+
+[33mcommit b3bf11f0d6696f7c45d3047a9b230b387a5552dd[m
+Author: gradzio <gregradzio@gmail.com>
+Date:   Fri Nov 18 10:48:22 2022 -0300
+
+    added few buttonsy
+
+[33mcommit 1ee968542d57fea57819ffc79fc9dc1ebf010503[m
+Author: Mateusz Łędzewicz <mat.ledzewicz@gmail.com>
+Date:   Thu Nov 17 15:35:33 2022 +0100
+
+    fix: mat-table
+
+[33mcommit 7c0c753d3b032f74d9f6b3ff59711eafb725d456[m
+Author: Mateusz Łędzewicz <mat.ledzewicz@gmail.com>
+Date:   Thu Nov 17 15:21:16 2022 +0100
+
+    fix: table template
+
+[33mcommit d6d6bd38be9a476efb19cfcb3c19c68522175a3b[m
+Author: Mateusz Łędzewicz <mat.ledzewicz@gmail.com>
+Date:   Thu Nov 17 14:15:51 2022 +0100
+
+    feat: table introduced
+
+[33mcommit 23b40e2d80a391fc056ce3c435e301581c5bdcf3[m
+Author: Mateusz Łędzewicz <mat.ledzewicz@gmail.com>
+Date:   Thu Nov 17 13:50:00 2022 +0100
+
+    feat: autocomplete introduced
+
+[33mcommit 96189f347b32b203409a9cb5b927521e1b6e8ff6[m
+Author: Mateusz Łędzewicz <mat.ledzewicz@gmail.com>
+Date:   Mon Nov 14 14:55:23 2022 +0100
+
+    feat: empty state tempalte provided
+
+[33mcommit 3e46dbe021df7f62b9b9d2a55b61278f75c55380[m
+Author: Mateusz Łędzewicz <mat.ledzewicz@gmail.com>
+Date:   Mon Nov 14 13:51:00 2022 +0100
+
+    feat: navbar-with-selection template added
+
+[33mcommit e330e0bcafafa13ba316d380e8c208e362bf709a[m
+Author: Mateusz Łędzewicz <mat.ledzewicz@gmail.com>
+Date:   Thu Nov 10 10:26:51 2022 +0100
+
+    feat: spinner and progress-bar added
+
+[33mcommit 72f526ff443876866bdede52765825b32c1cb546[m
+Author: Mateusz Łędzewicz <mat.ledzewicz@gmail.com>
+Date:   Wed Nov 9 10:22:27 2022 +0100
+
+    feat: two-columns-grid template added
+
+[33mcommit 981a91fde9c71e51115ee007ac0a961baada750d[m
+Author: Mateusz Łędzewicz <mat.ledzewicz@gmail.com>
+Date:   Fri Nov 4 10:35:05 2022 +0100
+
+    feat: add details to templates
+
+[33mcommit 119fe992d03b6a04842add74635877dbfe49aa4b[m
+Author: Mateusz Łędzewicz <mat.ledzewicz@gmail.com>
+Date:   Wed Oct 19 10:48:10 2022 +0200
+
+    fix: mat-select is working with forms
+
+[33mcommit 3b1878ed83e6f5f7ee39278a56a9dfc67d7f2a88[m
+Author: Mateusz Łędzewicz <mat.ledzewicz@gmail.com>
+Date:   Wed Oct 12 11:44:34 2022 +0200
+
+    feat: introduce selection list layout
+
+[33mcommit 17895d361d0cd9b568352b1eba44fcb1c18ff876[m
+Author: gradzio <gregradzio@gmail.com>
+Date:   Mon Oct 10 17:05:58 2022 +0200
+
+    sync stuff
+
+[33mcommit c93cb46d9905306daff550499d31ec9798122ff7[m
+Author: gradzio <gregradzio@gmail.com>
+Date:   Mon Oct 10 17:00:41 2022 +0200
+
+    typo
+
+[33mcommit ff6a445974766a3d2a982e4f072469dfaa5807ec[m
+Author: gradzio <gregradzio@gmail.com>
+Date:   Mon Oct 10 16:57:04 2022 +0200
+
+    added github pages
+
+[33mcommit e5c380eb3a20afd10d7db6cbe102837011b10668[m
+Author: gradzio <gregradzio@gmail.com>
+Date:   Thu Oct 6 07:41:51 2022 +0200
+
+    fixed binding in templates
+
+[33mcommit 894d765ad3038fefb23d82107857543e6f34513c[m
+Author: Mateusz Łędzewicz <mat.ledzewicz@gmail.com>
+Date:   Tue Oct 4 10:17:49 2022 +0200
+
+    feat: introduce architecture graph to readme
+
+[33mcommit f194e82fb9aa00791e5697fc7dc4e0fd69db9c28[m
+Author: gradzio <32451455+gradzio@users.noreply.github.com>
+Date:   Mon Sep 19 11:29:10 2022 +0200
+
+    Update README.md
+
+[33mcommit 1411ad0815dd663f70da912c4fb3e87024182c83[m
+Author: gradzio <gregradzio@gmail.com>
+Date:   Mon Sep 19 09:50:48 2022 +0200
+
+    upgrading to ng 14
+
+[33mcommit 1b5f51dc69385388f24efe8acb8b45c9a96290d8[m
+Author: gradzio <gregradzio@gmail.com>
+Date:   Mon Sep 19 09:43:09 2022 +0200
+
+    clean setup
+
+[33mcommit 7026a6bb8797a474b8d069223a77d01998ac74e3[m
+Author: gradzio <gregradzio@gmail.com>
+Date:   Fri Sep 9 14:44:28 2022 +0200
+
+    initial commit

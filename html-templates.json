@@ -99,6 +99,10 @@
       "list": "<mat-radio-group aria-label=\"Select an option\">\n  $content$\n</mat-radio-group>",
       "item": "<mat-radio-button *ngFor=\"let $itemVariable$ of $listVariable$\">{{$itemVariable$}}</mat-radio-button>"
     },
+    "smart-checkbox": {
+      "list": "<section *ngIf=\"categories$ | async as list else loading\">\n<ng-container *ngIf=\"list.length > 0; else emptyState\"> \n  $content$\n</ng-container>\n      <ng-template #emptyState>\n        <div style=\"text-align: center\"><img style=\"height: 500px\" src=\"assets/no-data.jpg\"></div>\n        <div style=\"text-align: center\"><a\n          href=\"https://www.freepik.com/free-vector/no-data-concept-illustration_5928292.htm#query=no%20data%20found&position=0&from_view=keyword\">Image\n          by storyset</a> on Freepik\n        </div>\n      </ng-template></section><ng-template #loading>\n        <mat-progress-spinner\n          [color]=\"'accent'\"\n          [mode]=\"'indeterminate'\"\n          [value]=\"50\">\n        </mat-progress-spinner>\n      </ng-template>",
+      "item": "<mat-checkbox *ngFor=\"let $itemVariable$ of $listVariable$\"| async\">{{$itemVariable$}}</mat-checkbox>"
+    },
     "checkbox": {
       "list": "<section>\n  $content$\n</section>",
       "item": "<mat-checkbox *ngFor=\"let $itemVariable$ of $listVariable$\">{{$itemVariable$}}</mat-checkbox>"
