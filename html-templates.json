@@ -40,8 +40,12 @@
       "item": "<mat-list-item role=\"listitem\" *ngFor=\"let $itemVariable$ of $listVariable$\">{{$itemVariable$}}</mat-list-item>"
     },
     "smart-list": {
-      "list": "<mat-list role=\"list\"*ngIf=\"$listVariable$ | async as list else loading\">$content$</mat-list><ng-template #loading>\n      <mat-progress-spinner\n        [color]=\"'primary'\"\n        [mode]=\"'indeterminate'\"\n        [value]=\"50\">\n      </mat-progress-spinner>\n    </ng-template>",
+      "list": "<mat-list role=\"list\"*ngIf=\"$listVariable$ | async as list else loading\"><ng-container *ngIf=\"list.length > 0; else emptyState\">\n  <mat-list-item role=\"listitem\" *ngFor=\"let item of list\">\n    {{item.title}}\n    <button mat-button color=\"primary\" (click)=\"selectProduct(item.id)\">Show details</button>\n  </mat-list-item>\n  </ng-container>\n  <ng-container>\n    <ng-template #emptyState>\n      Oops! There is no data..\n    </ng-template>\n  </ng-container>$content$</mat-list><ng-template #loading>\n      <mat-progress-spinner\n        [color]=\"'primary'\"\n        [mode]=\"'indeterminate'\"\n        [value]=\"50\">\n      </mat-progress-spinner>\n    </ng-template>",
       "item": "<mat-list-item role=\"listitem\" *ngFor=\"let $itemVariable$ of $listVariable$\">{{$itemVariable$}}</mat-list-item>"
+    },
+    "smart-selection-list": {
+      "list": "<mat-selection-list role=\"list\" *ngIf=\"categories$ | async as list else loading\"><ng-container *ngIf=\"list.length > 0; else emptyState\">$content$</ng-container><ng-container>\n        <ng-template #emptyState>\n          Oops! There is no data..\n        </ng-template>\n  </ng-container></mat-selection-list><ng-template #loading>\n    <mat-progress-spinner\n      [color]=\"'primary'\"\n      [mode]=\"'indeterminate'\"\n      [value]=\"50\">\n    </mat-progress-spinner>\n</ng-template>",
+      "item": "<mat-list-option role=\"listitem\" *ngFor=\"let $itemVariable$ of $listVariable$\">{{$itemVariable$}}</mat-list-option>"
     },
     "selection-list": {
       "list": "<mat-selection-list role=\"list\">$content$</mat-selection-list>",

@@ -1,51 +1,29 @@
-<!--<mat-grid-list cols="2" rowHeight="1:2">-->
-<!--  <mat-grid-tile>-->
-<!--<mat-list role="list" *ngIf="prodList$ | async as list else loading">-->
-<!--  <ng-container *ngIf="list.length > 0; else emptyState">-->
-<!--  <mat-list-item role="listitem" *ngFor="let item of list">-->
-<!--    {{item.title}}-->
-<!--    <button mat-button color="primary" (click)="selectProduct(item.id)">Show details</button>-->
-<!--  </mat-list-item>-->
-<!--  </ng-container>-->
-<!--  <ng-container>-->
-<!--    <ng-template #emptyState>-->
-<!--      Oops! There is no data..-->
-<!--    </ng-template>-->
-<!--  </ng-container>-->
-<!--</mat-list>-->
-<!--    <ng-template #loading>-->
-<!--      <mat-progress-spinner-->
-<!--        [color]="'primary'"-->
-<!--        [mode]="'indeterminate'"-->
-<!--        [value]="50">-->
-<!--      </mat-progress-spinner>-->
-<!--    </ng-template>-->
-<!--  </mat-grid-tile>-->
-<!--  <mat-grid-tile>-->
-<!--    <ng-container *ngIf="details$ | async as item">-->
-<!--      {{ item.title }}-->
-<!--      {{ item.price }}$-->
-<!--    </ng-container></mat-grid-tile>-->
-<!--</mat-grid-list>-->
-
-
-<mat-card>
-  <mat-card-title>
-    Product List
-  </mat-card-title>
-  <mat-card-content>
-    <mat-list role="list" *ngIf="prodList$ | async as list; else loading">
-      <mat-list-item role="listitem" *ngFor="let item of prodList$ | async">
-        {{item.title}}
-      </mat-list-item>
-    </mat-list>
+<mat-grid-list cols="2" rowHeight="1:2">
+  <mat-grid-tile>
+<mat-list role="list" *ngIf="prodList$ | async as list else loading">
+  <ng-container *ngIf="list.length > 0; else emptyState">
+  <mat-list-item role="listitem" *ngFor="let item of list">
+    {{item.title}}
+    <button mat-button color="primary" (click)="selectProduct(item.id)">Show details</button>
+  </mat-list-item>
+  </ng-container>
+  <ng-container>
+    <ng-template #emptyState>
+      Oops! There is no data..
+    </ng-template>
+  </ng-container>
+</mat-list>
     <ng-template #loading>
-    <mat-progress-spinner
-      [color]="'primary'"
-      [mode]="'indeterminate'"
-      [value]="50">
-    </mat-progress-spinner>
-  </ng-template>
-
-  </mat-card-content>
-</mat-card>
+      <mat-progress-spinner
+        [color]="'primary'"
+        [mode]="'indeterminate'"
+        [value]="50">
+      </mat-progress-spinner>
+    </ng-template>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <ng-container *ngIf="details$ | async as item">
+      {{ item.title }}
+      {{ item.price }}$
+    </ng-container></mat-grid-tile>
+</mat-grid-list>
