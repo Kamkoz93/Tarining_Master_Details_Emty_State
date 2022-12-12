@@ -83,6 +83,10 @@
       "list": "<mat-form-field appearance=\"fill\">\n  <mat-label>Choose an option</mat-label>\n  <mat-select>\n    $content$\n   </mat-select>\n</mat-form-field>",
       "item": "<mat-option *ngFor=\"let $itemVariable$ of $listVariable$\" [value]=\"$itemVariable$\">\n     {{$itemVariable$}}    \n</mat-option>"
     },
+    "smart-select": {
+      "list": "<mat-form-field *ngIf=\"holidaysList$ | async as list else loading\" appearance=\"fill\">\n <ng-container *ngIf=\"list.length > 0; else emptyState\"> <mat-label>Choose an option</mat-label>\n  <mat-select>\n    $content$\n   </mat-select></ng-container>\n    <ng-template #emptyState>\n      Oopss! there is no data!\n    </ng-template></mat-form-field><ng-template #loading>\n      <mat-progress-bar\n        class=\"example-margin\"\n        [color]=\"'primary'\"\n        [mode]=\"'indeterminate'\"\n        [value]=\"50\">\n      </mat-progress-bar>\n    </ng-template>",
+      "item": "<mat-option *ngFor=\"let $itemVariable$ of $listVariable$\" | async\" [value]=\"$itemVariable$\">\n     {{$itemVariable$}}    \n</mat-option>"
+    },
     "autocomplete": {
       "list": "<mat-form-field appearance=\"fill\">\n  <mat-label>Choose an option</mat-label>\n <input type=\"text\"\n       placeholder=\"Pick one\"\n        matInput\n       formControlName=\"$controlName$\"\n       [matAutocomplete]=\"$controlName$\"><mat-autocomplete #$controlName$=\"matAutocomplete\">\n    $content$\n   </mat-autocomplete>\n</mat-form-field>",
       "item": "<mat-option *ngFor=\"let $itemVariable$ of $listVariable$\" [value]=\"$itemVariable$\">\n     {{$itemVariable$}}    \n</mat-option>"

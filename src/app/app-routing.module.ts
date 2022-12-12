@@ -6,6 +6,7 @@ import { CryptoListComponent } from './ui/crypto-list/crypto-list.component';
 import { ProductsComponent } from './ui/products/products.component';
 import { CategoriesComponent } from './ui/categories/categories.component';
 import { CryptoChipsComponent } from './ui/crypto-chips/crypto-chips.component';
+import { PublicHolidaysComponent } from './ui/public-holidays/public-holidays.component';
 import { ProductListComponentModule } from './ui/product-list/product-list.component-module';
 import { ProductServiceModule } from './services/product.service-module';
 import { EmployeeListComponentModule } from './ui/employee-list/employee-list.component-module';
@@ -16,9 +17,11 @@ import { CategoriesComponentModule } from './ui/categories/categories.component-
 import { ProductCategoriesServiceModule } from './services/product-categories.service-module';
 import { CryptoChipsComponentModule } from './ui/crypto-chips/crypto-chips.component-module';
 import { CryptoServiceModule } from './services/crypto.service-module';
+import { PublicHolidaysComponentModule } from './ui/public-holidays/public-holidays.component-module';
+import { PublicHolidaysServiceModule } from './services/public-holidays.service-module';
 
 @NgModule({
-  imports: [RouterModule.forRoot([{ path: 'products-master-details', component: ProductListComponent }, { path: 'employees-master-details', component: EmployeeListComponent }, { path: 'crypto-master-details', component: CryptoListComponent }, { path: 'products', component: ProductsComponent }, { path: 'categories', component: CategoriesComponent }, { path: 'crypto', component: CryptoChipsComponent }]), ProductListComponentModule, ProductServiceModule, EmployeeListComponentModule, EmployeesServiceModule, CryptoListComponentModule, ProductsComponentModule, CategoriesComponentModule, ProductCategoriesServiceModule, CryptoChipsComponentModule, CryptoServiceModule],
+  imports: [RouterModule.forRoot([{ path: 'products-master-details', component: ProductListComponent }, { path: 'employees-master-details', component: EmployeeListComponent }, { path: 'crypto-master-details', component: CryptoListComponent }, { path: 'products', component: ProductsComponent }, { path: 'categories', component: CategoriesComponent }, { path: 'crypto', component: CryptoChipsComponent }, { path: 'public-holidays', component: PublicHolidaysComponent }]), ProductListComponentModule, ProductServiceModule, EmployeeListComponentModule, EmployeesServiceModule, CryptoListComponentModule, ProductsComponentModule, CategoriesComponentModule, ProductCategoriesServiceModule, CryptoChipsComponentModule, CryptoServiceModule, PublicHolidaysComponentModule, PublicHolidaysServiceModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
